@@ -44,3 +44,9 @@ class TestVector(unittest.TestCase):
         expected = math.cos(math.pi / 6)
         actual = w.cosine
         self.assertAlmostEqual(expected, actual)
+
+    def test_normalize(self):
+        norm = math.sqrt(self.v.u**2 + self.v.v**2)
+        expected = Vector(self.v.u / norm, self.v.v / norm)
+        actual = self.v.normalized()
+        self.assertEqual(expected, actual)
