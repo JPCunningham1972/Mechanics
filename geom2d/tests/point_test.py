@@ -35,10 +35,10 @@ class TestPoint(unittest.TestCase):
         self.assertEqual(expected, actual)
 
     def test_equal(self):
-        p = Point(1,1)
-        q = Point(1,1)
+        p = Point(1, 1)
+        q = Point(1, 1)
         r = "the"
-        s = Point(2,2)
+        s = Point(2, 2)
         self.assertTrue(p == p)
         self.assertFalse(p == r)
         self.assertTrue(p == q)
