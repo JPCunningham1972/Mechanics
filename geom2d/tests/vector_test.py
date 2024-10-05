@@ -107,8 +107,8 @@ class TestVector(unittest.TestCase):
         self.assertAlmostEqual(expected, actual)
 
     def test_perpendicular(self):
-        w = Vector(1,1)
-        expected = Vector(-1,1)
+        w = Vector(2,1)
+        expected = Vector(-1,2)
         actual = w.perpendicular()
         self.assertAlmostEqual(expected, actual)
 
