@@ -111,4 +111,4 @@ class Segment:
         return self.start == other.start and self.end == other.end
 
     def __str__(self):
-        return f'segment {self.start} to {self.end}'
+        return f'segment {self.start} to] {self.end}'
